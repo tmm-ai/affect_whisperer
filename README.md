@@ -10,6 +10,8 @@ The Wav2Vec_intv_helper.ipynb file cleans and merges the datasets, then trains t
 
 affect_whisperer.py is the ready-to-go file that uses the trained model and outputs bar charts that update every 2 seconds with new emotion levels. After the user stops talking, a line chart illustrating emotion levels throughout the entire conversation is produced.
 
+While there are a number of other files in this repository, the overall project is still under development and a more comprehnsive readme will be published once additonal aspects of the project are complete or at least good enough. 
+
 ## Dependencies - affect_whisperer.py
 Python 3.x
 torch
