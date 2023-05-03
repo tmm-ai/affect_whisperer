@@ -2,7 +2,7 @@
 Affect Whisperer helps users visualize the emotions they convey in real time. Use cases range from gaining insights on emotions during meetings, interview practice, discussing sensitive matters, or simply obtaining a readout of emotions while working.
 
 ## Introduction
-Currently, Affect_whisperer interprets emotions through vocal intonations. In the near future, the program will also include facial expression recognition and sentiment analysis, each with their own graphical outputs.
+Currently, Affect Whisperer interprets emotions through vocal intonations. In the near future, the program will also include facial expression recognition and sentiment analysis, each with their own graphical outputs.
 
 For vocal intonation training, the TESS and RAVDESS datasets were used. Wav2Vec2 is a deep learning model designed for automatic speech recognition. Wav2Vec stands for "Waveform to Vector," highlighting its purpose of transforming audio data into a more structured format. This model was employed to train a classifier on these datasets to identify emotions.
 
