@@ -21,8 +21,8 @@ transformers
 
 ## Usage
 Ensure that you have all the necessary dependencies installed.
-Place the pre-trained Wav2Vec2 model in the specified path (e.g., /Users/Tom/Dropbox/PycharmProject/Interview_buddy/wav2vec2_emotion_model_Ravdess1e5_30epoch_8160).
-Run the program using python <filename>.py in your terminal or command prompt.
+Place the pre-trained Wav2Vec2 model in the specified path (https://drive.google.com/file/d/1-B98oQYZVgPJRVgpCmdHPLFzoTlBa3Pd/view?usp=share_link).
+Run the program using python affect_whisperer.py in your terminal or command prompt.
 Answer the prompted question, and the program will record and analyze your speech.
 The program will display emotion probabilities in real-time using a bar chart.
 Once you've finished speaking, the program will display a line chart showing how emotions changed over time.
