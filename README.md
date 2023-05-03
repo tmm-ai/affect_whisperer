@@ -30,7 +30,7 @@ The program will display emotion probabilities in real-time using a bar chart.
 Once you've finished speaking, the program will display a line chart showing how emotions changed over time.
 
 
-## Functions
+## Functions - affect_whisperer.py
 
 1) record_audio(duration, threshold): Records audio for a specified duration (in seconds) while the average absolute amplitude is above the threshold. Returns the recorded audio as a NumPy array or None if no frames were recorded.
 
