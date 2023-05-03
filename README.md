@@ -30,22 +30,34 @@ Once you've finished speaking, the program will display a line chart showing how
 
 ## Functions
 
-record_audio(duration, threshold): Records audio for a specified duration (in seconds) while the average absolute amplitude is above the threshold. Returns the recorded audio as a NumPy array or None if no frames were recorded.
-predict_emotion(audio, device, model): Takes the recorded audio, the device (CPU or GPU) to perform the computations, and a pre-trained model. Returns the probabilities for each emotion class as a NumPy array.
-get_emotions(): Returns a tuple containing the list of emotions and a dictionary of their corresponding colors.
-bar_chart(emotion_probs): Updates the bar chart with the latest emotion probabilities.
-line_chart(emotion_history, duration): Plots a line chart of emotions over time based on the provided emotion history.
-main(): Main function to run the program. It sets up the device, loads the pre-trained model, and records and analyzes emotions.
+1) record_audio(duration, threshold): Records audio for a specified duration (in seconds) while the average absolute amplitude is above the threshold. Returns the recorded audio as a NumPy array or None if no frames were recorded.
+
+2) predict_emotion(audio, device, model): Takes the recorded audio, the device (CPU or GPU) to perform the computations, and a pre-trained model. Returns the probabilities for each emotion class as a NumPy array.
+
+3) get_emotions(): Returns a tuple containing the list of emotions and a dictionary of their corresponding colors.
+
+4) bar_chart(emotion_probs): Updates the bar chart with the latest emotion probabilities.
+
+5) line_chart(emotion_history, duration): Plots a line chart of emotions over time based on the provided emotion history.
+
+6) main(): Main function to run the program. It sets up the device, loads the pre-trained model, and records and analyzes emotions.
 
 
 ## Supported Emotions
 Neutral
+
 Calm
+
 Happy
+
 Sad
+
 Angry
+
 Fearful
+
 Disgust
+
 Surprised
 
 ## Customization
@@ -62,6 +74,7 @@ If the program is not detecting your speech, try increasing the threshold variab
 The accuracy of emotion recognition may vary depending on the quality of the pre-trained model used and the specific dataset it was trained on. The model's performance may not be as accurate for certain accents or languages if they were not well-represented in the training data.
 
 Real-time performance may be impacted by the processing capabilities of your system, particularly if you are using a CPU for model inference. If you have a GPU available, ensure that you have the necessary GPU dependencies (e.g., CUDA) installed to leverage its capabilities.
+
 Please feel free to ask if you need any further information or clarification.
 
 #### Maintainers
