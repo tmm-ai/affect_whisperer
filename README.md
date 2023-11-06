@@ -63,14 +63,14 @@ Disgust
 Surprised
 
 ## Customization
-You can customize the recording duration and threshold in the main() function by changing the duration and threshold variables, respectively. The duration variable determines the length of each recording segment (in seconds), while the threshold variable sets the average absolute amplitude required to consider a segment as containing speech.
+You can customize the recording duration and threshold in the main() function by changing the duration and threshold variables, respectively. The duration variable determines the length of each recording segment (in seconds) that produces each updated bar chart, while the threshold variable sets the minimum average absolute amplitude required to consider a segment as containing speech.
 
 If you want to use a different pre-trained Wav2Vec2 model, update the model_path variable in the main() function with the path to your desired model.
 
 ## Troubleshooting
 If you encounter issues with PyAudio, ensure that you have the necessary system dependencies installed. For example, on macOS, you may need to install PortAudio using brew install portaudio. On Windows, you may need to install the appropriate PyAudio wheel file for your Python version.
 
-If the program is not detecting your speech, try increasing the threshold variable in the main() function to capture audio at lower amplitudes.
+If the program is not detecting your speech, try decreasing the threshold variable in the main() function to capture audio at lower amplitudes.
 
 ## Limitations
 The accuracy of emotion recognition may vary depending on the quality of the pre-trained model used and the specific dataset it was trained on. The model's performance may not be as accurate for certain accents or languages if they were not well-represented in the training data.
